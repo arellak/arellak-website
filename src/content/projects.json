@@ -1,0 +1,204 @@
+[
+  {
+    "slug": "cutspool",
+    "title": "cutspool",
+    "year": "2026",
+    "role": "Design & Development",
+    "summary": "Turns long videos into short vertical clips",
+    "description": "Upload a podcast, interview or webinar and cutspool transcribes it with word-level timings, picks the moments worth cutting and returns each one as a 9:16 MP4 with optional burned-in captions. Pricing runs on credits, one per source minute.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite"
+    ],
+    "links": [
+      {
+        "label": "cutspool.com",
+        "href": "https://cutspool.com"
+      }
+    ],
+    "status": "in-progress",
+    "accent": "#d8d5cb",
+    "image": "/projects/cutspool.jpg"
+  },
+  {
+    "slug": "nachweisfertig",
+    "title": "nachweisfertig",
+    "year": "2026",
+    "role": "Design & Development",
+    "summary": "EU AI Act paperwork for small businesses",
+    "description": "Small German businesses list the AI tools they use, each tool gets a traffic-light rating with a plain-language explanation, and the app produces a PDF with the AI inventory, a training record and a usage policy. Written in German, with data hosted in Germany.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite"
+    ],
+    "links": [
+      {
+        "label": "nachweisfertig.de",
+        "href": "https://nachweisfertig.de"
+      }
+    ],
+    "status": "live",
+    "accent": "#c6d0cf",
+    "image": "/projects/nachweisfertig.jpg"
+  },
+  {
+    "slug": "ordinus",
+    "title": "Ordinus",
+    "year": "2026",
+    "role": "Design & Development",
+    "summary": "Scheduling for teams that decides who gets each booking",
+    "description": "A scheduling platform for teams. Visitors answer a routing form before they book, and rules decide which person or pool gets the appointment. Built the React app and the Fastify/tRPC API behind it, including Stripe payments, Google and Microsoft calendar sync and SAML single sign-on.",
+    "stack": [
+      "React",
+      "TanStack Router",
+      "Fastify",
+      "tRPC",
+      "PostgreSQL"
+    ],
+    "links": [
+      {
+        "label": "ordinus.io",
+        "href": "https://ordinus.io"
+      }
+    ],
+    "status": "in-progress",
+    "accent": "#e3ddd3",
+    "image": "/projects/ordinus.jpg"
+  },
+  {
+    "slug": "kremer-digital",
+    "title": "kremer-digital.de",
+    "year": "2026",
+    "role": "Design & Development",
+    "summary": "Studio website with a self-built blog and glossary editor",
+    "description": "The website for kremer-digital, a web design studio in the Ruhr area. Blog posts and the web design glossary are written in a small admin area with a Tiptap editor, and the server keeps its own page view counts. There are also landing pages for individual towns and trades, such as web design in Hagen or websites for tax advisors.",
+    "stack": [
+      "React",
+      "TanStack Router",
+      "Fastify",
+      "Prisma",
+      "Tiptap"
+    ],
+    "links": [
+      {
+        "label": "Live site",
+        "href": "https://kremer-digital.de"
+      }
+    ],
+    "status": "live",
+    "accent": "#b9c6cc",
+    "image": "/projects/kremer-digital.jpg"
+  },
+  {
+    "slug": "westencut-content-creation",
+    "title": "Westencut Content Creation",
+    "year": "2025",
+    "role": "Frontend & CMS",
+    "client": "Westencut GmbH",
+    "summary": "One-page showcase for a content creation team, fed by Strapi",
+    "description": "A one-page site for Westencut's content creation work. Each reference, with its cover video, vertical clips and links, is entered in Strapi, and the React Router front end renders it from there. Site and CMS each run in their own Docker container.",
+    "stack": [
+      "React Router",
+      "Strapi",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "links": [
+      {
+        "label": "nilsschmidt-videograf.com",
+        "href": "https://nilsschmidt-videograf.com/"
+      }
+    ],
+    "status": "live",
+    "accent": "#cfd3c8",
+    "image": "/projects/westencut.jpg"
+  },
+  {
+    "slug": "elevenlabs-nodejs",
+    "title": "ElevenLabs NodeJS",
+    "year": "2023",
+    "role": "Personal project",
+    "summary": "A Node.js wrapper for the ElevenLabs text-to-speech API",
+    "description": "A small npm package around the ElevenLabs API. It turns text into speech and saves the MP3 to an output folder, using nothing but Node's built-in modules. Published as @arellak/elevenlabs-wrapper.",
+    "stack": [
+      "Node.js",
+      "JavaScript"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/arellak/elevenlabs-wrapper"
+      },
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@arellak/elevenlabs-wrapper"
+      }
+    ],
+    "status": "archived"
+  },
+  {
+    "slug": "markov-chain-bot",
+    "title": "Markov Chain Bot",
+    "year": "2023",
+    "role": "Personal project",
+    "summary": "A Discord and Telegram chat bot that talks in Markov chains",
+    "description": "A chat bot for Discord and Telegram that writes its own messages with Markov chains. The Discord side is built on NullDev's bot template.",
+    "stack": [
+      "Node.js",
+      "JavaScript",
+      "Discord",
+      "Telegram"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/arellak/mukaji_chat"
+      }
+    ],
+    "status": "archived"
+  },
+  {
+    "slug": "youtube-extension",
+    "title": "YouTube Extension",
+    "year": "2023",
+    "role": "Personal project",
+    "summary": "A Chrome extension that shows who uploaded a YouTube video",
+    "description": "Open any YouTube video and the extension's popup shows details about the channel behind it, pulled from a YouTube API on RapidAPI. Built with React and bundled with webpack.",
+    "stack": [
+      "React",
+      "JavaScript",
+      "Webpack",
+      "Chrome Extension"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/arellak/youtube-extension"
+      }
+    ],
+    "status": "archived"
+  },
+  {
+    "slug": "terraria-raylib",
+    "title": "Terraria Raylib",
+    "year": "2022",
+    "role": "Personal project",
+    "summary": "My attempt at a Terraria-style sandbox game in C++",
+    "description": "After a lot of hours in Terraria and Minecraft, I tried writing my own block sandbox game, and the engine under it, in C++17 with raylib. It was more about learning how game code works than copying every feature, and it never got past an early version.",
+    "stack": [
+      "C++",
+      "raylib"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/arellak/TerrariaClone"
+      }
+    ],
+    "status": "archived"
+  }
+]
