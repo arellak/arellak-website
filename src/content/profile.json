@@ -9,7 +9,7 @@
     "label": "Open to new roles"
   },
   "headline": "I design interfaces and build them in React.",
-  "intro": "I'm a developer from Germany with a focus on web development, mostly TypeScript, React and Tailwind CSS. I once tried (and failed) to write my own game engine in C++ with raylib. Passionate about anime and games, and I like building things that just work, even if they take way too long to finish.",
+  "intro": "I'm a developer from Germany with a focus on web development, mostly TypeScript, React and Tailwind CSS. I once tried (and failed) to write my own game engine in C++ with raylib. Passionate about anime and games. I like building things that just work, even if they take way too long to finish.",
   "toolkit": [
     {
       "group": "Frontend",

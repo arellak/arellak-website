@@ -14,7 +14,7 @@ npm run build    # static output in dist/
 
 Name, role, email, intro, tech stack (`toolkit`, shown in the Stack section) and social links (shown in the Contact section and the footer).
 
-- `cv` (optional): path to a PDF in `public/`, e.g. `"/cv.pdf"`. It opens in the browser's PDF viewer, and the links only show when it's set.
+- `cv` (optional): path to a PDF in `public/`, e.g. `"/cv.pdf"`. It opens in the browser's PDF viewer and the links only show when it's set.
 
 ### Projects — `src/content/projects.json`
 

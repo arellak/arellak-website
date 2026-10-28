@@ -28,7 +28,7 @@
     "year": "2026",
     "role": "Design & Development",
     "summary": "EU AI Act paperwork for small businesses",
-    "description": "Small German businesses list the AI tools they use, each tool gets a traffic-light rating with a plain-language explanation, and the app produces a PDF with the AI inventory, a training record and a usage policy. Written in German, with data hosted in Germany.",
+    "description": "Small German businesses list the AI tools they use, each tool gets a traffic-light rating with a plain-language explanation and the app produces a PDF with the AI inventory, a training record and a usage policy. Written in German, with data hosted in Germany.",
     "stack": [
       "React",
       "TypeScript",
@@ -51,7 +51,7 @@
     "year": "2026",
     "role": "Design & Development",
     "summary": "Scheduling for teams that decides who gets each booking",
-    "description": "A scheduling platform for teams. Visitors answer a routing form before they book, and rules decide which person or pool gets the appointment. Built the React app and the Fastify/tRPC API behind it, including Stripe payments, Google and Microsoft calendar sync and SAML single sign-on.",
+    "description": "A scheduling platform for teams. Visitors answer a routing form before they book and rules decide which person or pool gets the appointment. Built the React app and the Fastify/tRPC API behind it, including Stripe payments, Google and Microsoft calendar sync and SAML single sign-on.",
     "stack": [
       "React",
       "TanStack Router",
@@ -75,7 +75,7 @@
     "year": "2026",
     "role": "Design & Development",
     "summary": "Studio website with a self-built blog and glossary editor",
-    "description": "The website for kremer-digital, a web design studio in the Ruhr area. Blog posts and the web design glossary are written in a small admin area with a Tiptap editor, and the server keeps its own page view counts. There are also landing pages for individual towns and trades, such as web design in Hagen or websites for tax advisors.",
+    "description": "The website for kremer-digital, a web design studio in the Ruhr area. Blog posts and the web design glossary are written in a small admin area with a Tiptap editor and the server keeps its own page view counts. There are also landing pages for individual towns and trades, such as web design in Hagen or websites for tax advisors.",
     "stack": [
       "React",
       "TanStack Router",
@@ -100,7 +100,7 @@
     "role": "Frontend & CMS",
     "client": "Westencut GmbH",
     "summary": "One-page showcase for a content creation team, fed by Strapi",
-    "description": "A one-page site for Westencut's content creation work. Each reference, with its cover video, vertical clips and links, is entered in Strapi, and the React Router front end renders it from there. Site and CMS each run in their own Docker container.",
+    "description": "A one-page site for Westencut's content creation work. Each reference, with its cover video, vertical clips and links, is entered in Strapi and the React Router front end renders it from there. Site and CMS each run in their own Docker container.",
     "stack": [
       "React Router",
       "Strapi",
@@ -188,7 +188,7 @@
     "year": "2022",
     "role": "Personal project",
     "summary": "My attempt at a Terraria-style sandbox game in C++",
-    "description": "After a lot of hours in Terraria and Minecraft, I tried writing my own block sandbox game, and the engine under it, in C++17 with raylib. It was more about learning how game code works than copying every feature, and it never got past an early version.",
+    "description": "After a lot of hours in Terraria and Minecraft, I tried writing my own block sandbox game and the engine under it in C++17 with raylib. It was more about learning how game code works than copying every feature. It never got past an early version.",
     "stack": [
       "C++",
       "raylib"
