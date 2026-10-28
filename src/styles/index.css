@@ -1,1 +1,186 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Retro Gaming";
+  src: url("/fonts/RetroGaming.ttf") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  --color-void: #1a1a2e;
+  --color-panel: #16213e;
+  --color-edge: #0f3460;
+  --color-edge-bright: #1b4c86;
+  --color-heart: #e94560;
+  --color-heart-dim: #9c2f40;
+  --color-mint: #21e6c1;
+  --color-snow: #e6e6e6;
+  --color-dim: rgb(230 230 230 / 0.66);
+  --color-ghost: rgb(230 230 230 / 0.4);
+
+  --font-pixel: "Retro Gaming", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: var(--font-pixel);
+
+  --radius-card: 10px;
+  --shadow-card: 0 4px 8px rgb(0 0 0 / 0.6);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  --text-mega: clamp(4.25rem, 17vw, 11.5rem);
+  --text-title: clamp(1.75rem, 3.6vw, 2.75rem);
+  --text-label: 0.75rem;
+
+  --animate-blink: blink 1.1s steps(1, end) infinite;
+  --animate-twinkle: twinkle 3.2s ease-in-out infinite;
+  --animate-ring: ring 2.4s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  --animate-wander-x: wander-x 20s ease-in-out infinite alternate;
+  --animate-wander-y: wander-y 24s ease-in-out infinite alternate;
+
+  @keyframes wander-x {
+    from {
+      transform: translateX(calc(var(--dx) * -1));
+    }
+    to {
+      transform: translateX(var(--dx));
+    }
+  }
+
+  @keyframes wander-y {
+    from {
+      transform: translateY(calc(var(--dy) * -1));
+    }
+    to {
+      transform: translateY(var(--dy));
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.15;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes ring {
+    0% {
+      transform: scale(1);
+      opacity: 0.55;
+    }
+    70%,
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --gutter: clamp(1rem, 3vw, 2.5rem);
+  }
+
+  html {
+    background: var(--color-void);
+    color: var(--color-snow);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    line-height: 1.6;
+    background: var(--color-void);
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-heart);
+    color: var(--color-void);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-mint);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  section[tabindex="-1"]:focus {
+    outline: none;
+  }
+}
+
+@utility label {
+  font-size: var(--text-label);
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+@utility gutter {
+  padding-inline: var(--gutter);
+}
+
+@utility pixel-btn {
+  background: var(--face, var(--color-heart));
+  transform: translateY(var(--press, 0px));
+  box-shadow:
+    0 -4px 0 0 var(--face, var(--color-heart)),
+    0 4px 0 0 var(--face, var(--color-heart)),
+    -4px 0 0 0 var(--face, var(--color-heart)),
+    4px 0 0 0 var(--face, var(--color-heart)),
+    0 calc(8px - var(--press, 0px)) 0 0 var(--depth, var(--color-heart-dim));
+  transition:
+    transform 90ms ease-out,
+    box-shadow 90ms ease-out,
+    background-color 150ms ease-out;
+}
+
+@utility pixel-shadow {
+  text-shadow:
+    0.06em 0.06em 0 var(--color-edge),
+    0.12em 0.12em 0 rgb(0 0 0 / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
