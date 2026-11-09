@@ -1,0 +1,295 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink: #333;
+  --muted: #6b6b6b;
+  --faint: #9a9a9a;
+  --line: #dcdcdc;
+  --link: #3b4a6b;
+  --sidebar: 50mm;
+  --gap: 9mm;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.7pt;
+  line-height: 1.55;
+  color: var(--ink);
+  background: #fff;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  padding: 15mm 15mm 12mm;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+}
+
+.page:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+
+.page-no {
+  position: absolute;
+  top: 7mm;
+  right: 9mm;
+  font-size: 10pt;
+}
+
+.top,
+.body {
+  display: grid;
+  grid-template-columns: var(--sidebar) 1fr;
+  column-gap: var(--gap);
+}
+
+.contact {
+  padding-top: 2mm;
+  text-align: right;
+  font-size: 9pt;
+  line-height: 1.75;
+}
+
+.contact p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2mm;
+}
+
+.contact svg {
+  width: 3mm;
+  height: 3mm;
+  fill: var(--ink);
+}
+
+.identity h1 {
+  font-family: "Segoe UI Light", "Segoe UI", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 31pt;
+  line-height: 1.1;
+  letter-spacing: 0.12em;
+}
+
+.identity .headline {
+  margin-top: 3mm;
+  font-size: 12pt;
+}
+
+.identity .running {
+  font-family: "Segoe UI Light", "Segoe UI", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 22pt;
+  letter-spacing: 0.08em;
+}
+
+.rule {
+  position: relative;
+  height: 1px;
+  margin: 4.5mm 0 5.5mm;
+  background: var(--line);
+}
+
+.rule::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 10mm;
+  height: 3px;
+  background: var(--ink);
+}
+
+h2 {
+  font-family: "Segoe UI Light", "Segoe UI", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14pt;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 10mm;
+  height: 2.5px;
+  margin-top: 2mm;
+  background: var(--ink);
+}
+
+aside {
+  text-align: right;
+}
+
+aside h2::after {
+  margin-left: auto;
+}
+
+aside section + section {
+  margin-top: 8mm;
+}
+
+aside section > :not(h2) {
+  margin-top: 3mm;
+}
+
+aside dt {
+  font-weight: bold;
+}
+
+aside dd + dt {
+  margin-top: 1.6mm;
+}
+
+aside .group + .group {
+  margin-top: 2.6mm;
+}
+
+aside .group-title {
+  font-weight: bold;
+}
+
+aside .group p {
+  color: var(--ink);
+}
+
+main section + section {
+  margin-top: 6mm;
+}
+
+main section > h2 + * {
+  margin-top: 3.5mm;
+}
+
+.summary p + p {
+  margin-top: 1.6mm;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 22mm 1fr;
+  column-gap: 4mm;
+  padding: 2.1mm 0;
+  border-top: 1px solid var(--line);
+}
+
+.entry:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.entry .when {
+  color: var(--muted);
+  font-size: 8.8pt;
+  white-space: nowrap;
+}
+
+.entry .what {
+  font-weight: bold;
+}
+
+.entry .role {
+  font-weight: normal;
+}
+
+.entry .stack {
+  margin-top: 0.6mm;
+  color: var(--muted);
+  font-size: 8.6pt;
+}
+
+.entry ul {
+  margin-top: 1.4mm;
+  padding-left: 3.6mm;
+}
+
+.entry li + li {
+  margin-top: 0.8mm;
+}
+
+.entry li::marker {
+  color: var(--faint);
+}
+
+.page--full .top,
+.page--full .body {
+  grid-template-columns: 1fr;
+}
+
+.resume p + p {
+  margin-top: 2mm;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 4mm;
+  row-gap: 3mm;
+}
+
+.skills-grid h3 {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.skills-grid ul {
+  margin-top: 1.2mm;
+  list-style: none;
+}
+
+.skills-grid li {
+  line-height: 1.55;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside .rating li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 2mm;
+  white-space: nowrap;
+}
+
+.stars {
+  font-family: "Segoe UI Symbol", "Segoe UI", Arial, sans-serif;
+  font-size: 8.4pt;
+  letter-spacing: 0.04em;
+}
+
+.stars .off {
+  color: #c4c4c4;
+}
+
+.entry .what a {
+  font-weight: normal;
+}
+
+.entry li strong {
+  font-weight: bold;
+}

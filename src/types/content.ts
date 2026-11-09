@@ -25,6 +25,7 @@ export type Profile = {
   toolkit: ToolkitGroup[]
   socials: Link[]
   cv?: string
+  cvDe?: string
 }
 
 export type ProjectStatus = "live" | "in-progress" | "archived"

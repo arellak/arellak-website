@@ -14,7 +14,10 @@ npm run build    # static output in dist/
 
 Name, role, email, intro, tech stack (`toolkit`, shown in the Stack section) and social links (shown in the Contact section and the footer).
 
-- `cv` (optional): path to a PDF in `public/`, e.g. `"/cv.pdf"`. It opens in the browser's PDF viewer and the links only show when it's set.
+- `cv` (optional): path to the English PDF in `public/`. Enables the "Show CV" dropdown.
+- `cvDe` (optional): path to the German PDF in `public/`. Adds the "Deutsch" option; "English" uses `cv`. Both open in a new tab.
+
+CV sources live in `cv/`: English templates use `.html`, German translations use `.de.html`. Run `node cv/build.mjs` to rebuild all PDFs. Set `CHROME_PATH` to your Chrome executable if it is not at the default Windows location.
 
 ### Projects — `src/content/projects.json`
 

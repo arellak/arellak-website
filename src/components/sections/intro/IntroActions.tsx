@@ -2,6 +2,7 @@ import { ArrowIcon } from "@/components/ui/ArrowIcon"
 import { PixelButton } from "@/components/ui/PixelButton"
 import { handleAnchorClick } from "@/lib/anchorNavigation"
 import { profile } from "@/lib/content"
+import { CvDropdown } from "./CvDropdown"
 
 export function IntroActions() {
   return (
@@ -11,10 +12,7 @@ export function IntroActions() {
         <ArrowIcon direction="down" className="size-3.5" />
       </PixelButton>
       {profile.cv ? (
-        <PixelButton href={profile.cv} variant="ghost" external>
-          View CV
-          <span className="text-ghost">.pdf</span>
-        </PixelButton>
+        <CvDropdown english={profile.cv} german={profile.cvDe} />
       ) : null}
     </div>
   )

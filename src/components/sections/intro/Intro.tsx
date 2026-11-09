@@ -28,7 +28,7 @@ export function Intro() {
       <Reveal delay={0.6} y={12} className="mt-5 max-w-[46rem] md:mt-6">
         <p className="text-[0.9375rem] leading-[1.8] text-dim">{profile.intro}</p>
       </Reveal>
-      <Reveal delay={0.75} y={12} className="mt-10">
+      <Reveal delay={0.75} y={12} className="relative z-10 mt-10">
         <IntroActions />
       </Reveal>
       <Reveal delay={0.9} y={12} className="mt-12 flex w-full justify-center">

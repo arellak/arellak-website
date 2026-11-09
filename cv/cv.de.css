@@ -1,0 +1,6 @@
+/* Keep longer German headings within the original sidebar. */
+aside h2 {
+  font-size: 12pt;
+  letter-spacing: 0.03em;
+  hyphens: manual;
+}
